@@ -20,5 +20,5 @@ deploy:
 	cd ../ghpages__huayra-tips/; git add --all .; git commit -m "update"; git push origin gh-pages
 	
 	@echo ""
-	@echo " * Subiendo los cambios a: http://hugoruscitti.github.io/pilas-website-test "
+	@echo " * Subiendo los cambios a: http://hugoruscitti.github.io/huayra-tips "
 	@echo ""

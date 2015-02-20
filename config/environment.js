@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'huayra-tips',
     environment: environment,
     baseURL: '/',
-    locationType: 'auto',
+    locationType: 'hash',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -17,6 +17,16 @@ module.exports = function(environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
     }
+  };
+
+  ENV.contentSecurityPolicy = {
+    "default-src": "*",
+    'script-src': "*",
+    'font-src': "'self' http://fonts.gstatic.com",
+    'connect-src': "'self' *",
+    'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com",
+    'report-uri': '*',
+    'img-src': '*'
   };
 
   if (environment === 'development') {
@@ -40,7 +50,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.baseURL = '/huayra-tips/';
   }
 
   return ENV;
