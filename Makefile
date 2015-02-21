@@ -4,9 +4,14 @@ V=[01;32m
 all:
 	@echo "Comandos disponibles:"
 	@echo ""
+	@echo "   $(V)iniciar $(N) Instala las dependencias iniciales."
 	@echo "   $(V)preview $(N) Muestra el sitio de forma local."
 	@echo "   $(V)deploy  $(N) Sube el sitio completo a la web."
 	@echo ""
+
+iniciar:
+	npm install
+	bower install
 
 preview:
 	ember serve
@@ -23,4 +28,5 @@ deploy:
 	@echo ""
 	@echo " * Subiendo los cambios a: http://hugoruscitti.github.io/huayra-tips "
 	@echo ""
+ 
  
