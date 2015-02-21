@@ -12,6 +12,7 @@ preview:
 	ember serve
 
 deploy:
+	@echo " " >> Makefile
 	git add .
 	git commit -m "actualizacion..."
 	git push
@@ -22,3 +23,4 @@ deploy:
 	@echo ""
 	@echo " * Subiendo los cambios a: http://hugoruscitti.github.io/huayra-tips "
 	@echo ""
+ 
