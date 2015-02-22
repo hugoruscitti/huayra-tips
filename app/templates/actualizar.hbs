@@ -1,19 +1,65 @@
-<h1>¿Cómo actualizar {{nombre}}?</h1>
+<div class="row">
+  <div class="col-lg-8">
+    <h1>¿Cómo actualizar {{nombre}}?</h1>
 
-<p>Para actualizar {{nombre}} tienes que seguir
-   estos pasos</p>
+    <p class="lead">Guía paso a paso para actualizar {{nombre}} a la última versión.</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8">
+    <h3>Paso 1</h3>
+
+    <p>Primero hay que abrir la <strong>Terminal de MATE</strong> que
+      aparece en el menú <strong>accesorios</strong>.</p>
+
+    <p><img class="img-responsive" src='imagenes/menu-indicacion.jpg'></p>
+  </div>
+</div>
 
 
-<p>Abrir el terminal</p>
+<div class="row">
+  <div class="col-lg-8">
+    <h3>Paso 2</h3>
 
-<p>Luego ejecutá los siguientes comandos</p>
+    <p>El siguiente paso consiste en escribir dos comandos, podés tipearlos
+    o directamente copiar y pegar:</p>
+
+    <pre>sudo apt-get update
+sudo apt-get install {{nombre}}</pre>
+
+    <p>Así deberían quedar los comandos en consola, cuando pulses
+      ENTER se va a iniciar la instalación, puede demorar unos minutos...</p>
+
+    {{huayra-comando nombre=nombre}}
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-lg-8">
+    <h3>Paso 3</h3>
+
+    <p>El último paso, es <strong>volver a iniciar {{nombre}}</strong>, para
+      comenzar a utilizar la versión nueva :)
+    </p>
+  </div>
+</div>
 
 
 
-<pre>
-  sudo apt-get update
 
-  sudp apt-get install {{nombre}}
-</pre>
+<div class="row">
+  <div class="col-lg-8">
+    <h3>Finalizando </h3>
 
-{{outlet}}
+    <p>Ya estaría todo listo para comenzar a utilizar el programa, recordá
+    que contamos con un <a target='_blank' href='http://huayra.conectarigualdad.gob.ar/foro/'>foro</a> para cualquier inquietud que surja.</p>
+
+    <p>¡Éxitos!</p>
+  </div>
+</div>
+
+<div class="row">
+  <p>&nbsp;</p>
+</div>

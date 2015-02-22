@@ -36,6 +36,7 @@
     "glob": "^4.0.5"
   },
   "dependencies": {
+    "console-browserify": "^1.1.0",
     "underscore": "^1.8.1"
   }
 }
