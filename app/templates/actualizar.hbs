@@ -1,8 +1,15 @@
 <div class="row">
-  <div class="col-lg-8">
-    <h1>¿Cómo actualizar {{nombre}}?</h1>
 
-    <p class="lead">Guía paso a paso para actualizar {{nombre}} a la última versión.</p>
+  <div class="col-lg-8">
+    <h1>¿Cómo actualizar {{model.nombre}}?</h1>
+
+    <p class="lead">Guía paso a paso para actualizar {{model.nombre}} a la última versión.</p>
+
+    {{#if debug}}
+      {{huayra-nombre nombre=model.nombre}}
+    {{/if}}
+
+
   </div>
 </div>
 
@@ -21,17 +28,21 @@
 <div class="row">
   <div class="col-lg-8">
     <h3>Paso 2</h3>
+    
+    {{#if debug}}
+      {{huayra-nombre nombre=model.nombre}}
+    {{/if}}
 
     <p>El siguiente paso consiste en escribir dos comandos, podés tipearlos
     o directamente copiar y pegar:</p>
 
     <pre>sudo apt-get update
-sudo apt-get install {{nombre}}</pre>
+sudo apt-get install {{model.nombre}}</pre>
 
     <p>Así deberían quedar los comandos en consola, cuando pulses
       ENTER se va a iniciar la instalación, puede demorar unos minutos...</p>
 
-    {{huayra-comando nombre=nombre}}
+    {{huayra-comando nombre=model.nombre}}
   </div>
 </div>
 
@@ -40,7 +51,7 @@ sudo apt-get install {{nombre}}</pre>
   <div class="col-lg-8">
     <h3>Paso 3</h3>
 
-    <p>El último paso, es <strong>volver a iniciar {{nombre}}</strong>, para
+    <p>El último paso, es <strong>volver a iniciar {{model.nombre}}</strong>, para
       comenzar a utilizar la versión nueva :)
     </p>
   </div>
