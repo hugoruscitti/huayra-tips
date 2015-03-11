@@ -2,6 +2,12 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model: function(params) {
-    return {nombre: params.id}
+    //let url = 'http://devel.huayragnulinux.com.ar/pkg/package/' + params.id + "?jsoncallback=?";
+
+    //$.getJSON(url, (data) => {
+    //   alert(data);
+    //});
+
+    return {nombre: params.id};
   }
 });

@@ -8,6 +8,7 @@ var Router = Ember.Router.extend({
 Router.map(function() {
   this.route('index', {path: '/'});
   this.resource('actualizar', { path: '/actualizar/:id' });
+  this.route("error");
 });
 
 export default Router;
